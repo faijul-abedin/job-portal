@@ -39,6 +39,8 @@ class HandleInertiaRequests extends Middleware
                 ...(new Ziggy)->toArray(),
                 'location' => $request->url(),
             ],
+            'year' => date('Y'),
+           'app_name' => config('app.name', 'JobPortal'),
         ];
     }
 }
